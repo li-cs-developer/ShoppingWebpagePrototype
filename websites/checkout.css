@@ -1,0 +1,169 @@
+.checkout {
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+.checkout-page-layout {
+    display: flex;
+    gap: 6vw; /* space between cart items and total summary */
+    padding: 6vw; /* space around the container */
+    justify-content: space-between; /* one to the left one to the right */
+}
+
+.cart-section,
+.summary-section {
+    flex: 1; /* distribute the space equally */
+    box-sizing: border-box; 
+    position: relative; /* for fix position of the trash can */
+}
+
+.cart-section {
+    border: 0.1vw solid #cccccc;
+    border-radius: 1vw;  /* round corner */
+    padding: 2.5vw;
+}
+
+.cart-item {
+    border: 0.1vw solid #cccccc;
+    border-radius: 1vw;
+    padding: 1vw;
+    margin-bottom: 2vw;
+    position: relative;
+}
+
+.cart-item-name {
+    display: flex;
+    font-size: 2vw;
+    justify-content: space-between; /* separate item name and expand icon */
+    font-weight: bold;
+    margin-bottom: 1vw; /* space between name and image */
+}
+
+.cart-item-image {
+    max-width: 12vw;
+    height: auto;
+    border: 0.1vw solid #dddddd;
+    border-radius: 0.5vw; /* round corner */
+    margin-bottom: 1vw; /* space between image and price */
+}
+
+.price-line {
+    font-size: 1.6vw;
+}
+
+.ingredient-buttons {
+    display: flex; /* put buttons horizontally */
+    gap: 0.5vw; /* space between buttons */
+    flex-wrap: wrap; /* move to next line if not enough */
+    margin-top: 0.8vw; /* space between quantity control and buttons */
+}
+
+.ingredient-buttons button {
+    padding: 0.5vw 1vw; /* space between button border and text */
+    border: 0.1vw solid #cccccc;
+    border-radius: 1vw; /* round border */
+    background-color: white;
+    color: black;
+    font-size: 1.4vw;
+}
+
+.ingredient-buttons button:hover {
+    background-color: #eeeeee;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center; /* center vertically */
+    gap: 0.5vw;
+    margin-top: 0.5vw;
+}
+
+.quantity-control button {
+    padding: 0.7vw 1.2vw;
+    border-radius: 1vw;
+    border: none; /* remove default border */
+    background: #eaebea;
+}
+
+.quantity-control button:hover {
+    background: #cfcfcf;
+}
+
+.quantity-control span {
+    min-width: 3vw;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.trash-icon {
+    width: 1.5vw;
+    height: 1.5vw;
+    position: absolute; /* fixed position */
+    right: -2vw;
+    top: 1vw;
+}
+
+.summary-section {
+    background-color: #f5f5f5; 
+    border-radius: 1vw; /* rounded background */
+    padding: 2vw; /* spce around the content */
+    display: flex;
+    flex-direction: column; /* put the elements vertically */
+    gap: 1vw; /* line spacing */
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between; /* one to the left and one to the right */
+    font-size: 1.5vw;
+}
+
+.summary-line.total {
+    font-weight: bold;
+    border-top: 0.1vw solid #aaaaaa;
+    padding-top: 1vw; /* space between line and text */
+}
+
+.shipping-method-section {
+    margin-top: 0.8vw; /* space between shipping and total price */
+    font-size: 1.5vw;
+}
+
+.shipping-option {
+    display: block; /* new line for each option */
+    font-size: 1.2vw;
+    margin-top: 0.5vw; /* space between options */
+}
+
+.pay-button {
+    margin-top: 1vw; /* space above */
+    background-color: #00b140;
+    color: white;
+    border: none; /* delete the defaul border */
+    border-radius: 1vw; /* round corner */
+    padding: 1vw; 
+    font-size: 1.5vw;
+    text-align: center;
+    text-decoration: none; /* remove underline */
+}
+
+.pay-button:hover {
+    background-color: #007d30;
+}
+
+.hidden {
+    display: none;
+}
+
+.divider {
+    width: 0.1vw;
+    background-color: #cccccc;
+    margin: 0 2vw;
+}
+
+
+
+
+
+
+

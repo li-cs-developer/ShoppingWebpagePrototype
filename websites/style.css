@@ -1,0 +1,85 @@
+/* This .css is for the topbar specifically */
+:root {
+    --green: #00b140; 
+}
+
+body {
+    font-family: sans-serif; /* change the font */
+}
+
+.topbar {
+    background-color: var(--green);
+    display: flex; 
+    align-items: center; /* centre the items vertically*/
+    justify-content: space-between;
+    padding: 0.5vw 2vw; /* horitontal spaces between items */
+}
+
+.topbar-left {
+    display: flex;
+    align-items: center; /* centre the items vertically*/
+    gap: 2vw; /* horitontal spaces between items */
+    flex: 1; 
+}
+
+.logo {
+    height: 3vw;
+    width: auto;
+    border-radius: 0.8vw; /* round corner */
+}
+
+.store-name {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.topbar-center {
+    display: flex;
+    gap: 2vw; /* space between items */
+    font-size: 1.5vw;
+    align-items: flex-end; /* vertical bottom aligned */
+    justify-content: center; /* horizontal centered */
+    flex: 1;
+}
+
+.topbar-link {
+    text-decoration: none; /* remove underline */
+    padding: 0.5vw 1vw; /* space inside button*/ 
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 0.5vw; /* round corner */
+    font-weight: bold;
+}
+
+/* green text with white background when hover */
+.topbar-link:hover {
+    background-color: white;
+    color: var(--green); 
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center; /* vertically centered */
+    gap: 2vw; /* space between items */
+    justify-content: flex-end; /* horizontally righ aligned */
+    flex: 1;
+}
+
+.search-box {
+    padding: 0.5vw; /* space between text and box */
+    border-radius: 1.2vw; /* rounded box */
+    border: 1px solid #ccc;
+    width: 10vw;
+}
+
+.cart-img {
+    height: 2vw;
+    width: auto;
+}
+
+.home-img:hover {
+    transform: scale(1.1); 
+}
+
