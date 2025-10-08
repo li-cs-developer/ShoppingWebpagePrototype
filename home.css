@@ -1,0 +1,30 @@
+.home-grid {
+    display: grid; /* make the images as grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 items per line */
+    gap: 5vw; /* space between items */
+    padding: 5vw; /* space between edges */
+    justify-items: center;
+}
+
+.grid-cell {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 4vw; /* round corner */
+    aspect-ratio: 1 / 1; /* make it square */
+    overflow: hidden; /* cutoff if not square */
+}
+
+/* enlarge slightly when hover */
+.grid-cell:hover {
+    transform: scale(1.01); 
+}
+
+/* make the images fit in grid */
+.grid-cell img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5vw;
+}
+
+

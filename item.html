@@ -1,0 +1,103 @@
+<!DOCTYPE html> <!-- Item Page Template -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Item Detail - Store Name</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="item.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <header>
+        <div class="topbar">
+            <div class="topbar-left">
+                <img src="images/logo.png" alt="Store Logo" class="logo" />
+                <span class="store-name">Store Name</span>
+            </div>
+
+            <div class="topbar-center">
+                <a href="index.html" class="topbar-link">Home</a>
+                <a href="shop.html" class="topbar-link">Shop</a>
+                <a href="refill.html" class="topbar-link">Refill</a>
+            </div>
+
+            <div class="topbar-right">
+                <input type="text" class="search-box" placeholder="Search..." />
+                <a href="checkout.html" class="cart-icon">
+                    <img src="images/cart.png" alt="Cart" class="cart-img" />
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Item Page -->
+    <main class="item-page">
+        <div class="item-page-layout">
+
+            <!-- Left Section -->
+            <div class="product-image-section">
+                <img src="images/photo1.png" alt="Item Image" class="product-image" />
+                <h2 id="item-name">Item Name</h2>
+                <p class="price-label">$<span id="item-price">800.00</span></p>
+                <div class="description-section">
+                    <p>Product description:</p>
+                    <div id="item-description" class="description-text">
+                        Add Product Description Here-----------------------------------------------------------------
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Right Section -->
+            <div class="product-option-section">
+
+                <!--Product Weight Options--->
+                <div class="product-options">
+                    <label for="weights">Product Weight:</label>
+                    <div class="weights" id="weights">
+                        <button class="weight-btn">100 kg</button>
+                        <button class="weight-btn">200 kg</button>
+                        <button class="weight-btn">500 kg</button>
+                        <button class="weight-btn">1000 kg</button>
+                    </div>
+                </div>
+
+                <div class="product-options">
+                    <!--Quantity Button--->
+                    <label>Barrel Quantity:</label>
+                    <div class="quantity-control">
+                        <button id="decrease" class="qty-btn">-</button>
+                        <span id="barrel-qty">2</span>
+                        <button id="increase" class="qty-btn">+</button>
+                    </div>
+                </div>
+
+                <!--Ingredients Options--->
+                <div class="product-options">
+                    <label>Ingredients:</label>
+                    <div class="ingredients" id="ingredients">
+                        <button class="ingredient-btn">Corn</button>
+                        <button class="ingredient-btn">Wheat</button>
+                        <button class="ingredient-btn">Beans</button>
+                    </div>
+                </div>
+
+                <hr class="divider" />
+
+                <!--Total Price and Add to Cart--->
+                <div class="total-section">
+                    <p class="total-label">$<span id="total-price">1600.00</span></p>
+                    <button class="add-cart-btn">
+                        Add to Cart
+                        <img src="images/cart.png" alt="Cart Icon" class="cart-btn-icon"/>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+

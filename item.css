@@ -1,0 +1,151 @@
+main.item-page {
+    padding: 4vw; /* space away from topbar */
+}
+
+.item-page-layout {
+    display: flex;
+    gap: 8vw; /* space between the left and right sections */
+    justify-content: space-between;
+    align-items: flex-start; /* align items from top */
+}
+
+.product-image-section {
+    flex: 1;
+    padding-left: 2vw; /* more space on the left */
+}
+
+.product-image {
+    width: 100%;
+    max-width: 35vw;
+    height: auto;
+    border: 0.15vw solid black; /* black border */
+}
+
+#item-name {
+    font-size: 2.5vw; 
+    margin-top: 1.5vw; /* space above */
+}
+
+.price-label {
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 1vw 0; /* vertical spaces */
+}
+
+.description-section p {
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-bottom: 0.5vw;
+}
+
+.description-text {
+    font-size: 1.4vw;
+    padding-top: 0.5vw; /* space above */
+    padding-right: 2.4vw;  /* align with the picture */
+}
+
+.product-option-section {
+    flex: 1;
+    padding-right: 2vw; /* space edge */
+}
+
+.product-options {
+    margin-bottom: 1.5vw; /* space between each options */
+}
+
+.product-options label {
+    font-weight: bold;
+    font-size: 2vw;
+    margin-bottom: 0.6vw;
+    display: block;
+}
+
+/* add more if needed */
+.weights,
+.ingredients {
+    display: flex;
+    flex-wrap: wrap; /* put buttons to next line if needed */
+    gap: 1vw; /* spaces between buttons */
+}
+
+.weight-btn,
+.ingredient-btn {
+    padding: 0.5vw 1vw; /* space inside button */
+    font-size: 1.4vw;
+    border: 0.1vw solid black;
+    background-color: white;
+    border-radius: 0.5vw; /* round corner */
+}
+
+/* add more if needed */
+.weight-btn:hover,
+.ingredient-btn:hover {
+    background-color: #ddd; /* light grey when hover */
+}
+
+.quantity-control {
+    display: flex; /* align - number and + in one row  */
+    align-items: center; /* centred vertically */
+    border: none;
+    width: fit-content; /* change width as needed */
+    border-radius: 1vw; /* round corner */
+}
+
+.qty-btn {
+    background-color: #00b140;
+    color: white;
+    font-size: 1.6vw;
+    padding: 0.4vw 0.8vw;
+    border: black; 
+    border-radius: 0.5vw; /* round corner */
+}
+
+.qty-btn:hover {
+    background-color: #007d30;
+}
+
+.quantity-control span {
+    padding: 0 2vw; /* horizontal space */
+    font-size: 1.6vw;
+    min-width: 2ch;
+    text-align: center;
+}
+
+.divider {
+    margin: 3vw 0 0; /* space above */
+    border: none;
+    height: 0.1vw;
+    background-color: black;
+}
+
+.total-section {
+    display: flex;
+    flex-direction: column; /* align items vertically */
+    align-items: flex-start; /* left aligned */
+}
+
+.total-label {
+    font-size: 3vw; 
+    font-weight: bold;
+}
+
+.add-cart-btn {
+    padding: 1vw 2vw; 
+    font-size: 1.8vw; 
+    background-color: #00b140;
+    color: white;
+    border: none; /* delete default border */
+    display: flex;
+    align-items: center; /* center vertically */
+    gap: 1vw; /* space between text and icon */
+    border-radius: 1.5vw;  /* rounded corner */
+}
+
+.add-cart-btn:hover {
+    background-color: #007d30;
+}
+
+.cart-btn-icon {
+    width: 1.8vw;
+    height: auto;
+}

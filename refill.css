@@ -1,0 +1,107 @@
+.refill-page {
+    padding: 2vw; /* space away from topbar */
+    text-align: center;
+}
+
+.month-title {
+    font-size: 2.5vw;
+    margin: 2vw 0;  /* vertical spaces */
+}
+
+/* calendar format */
+.calendar {
+    margin: 0 auto; /* center horizontall */
+    border-collapse: collapse; /* no space between borders */
+    width: 45%;
+    border: 0.2vw solid #f58220; 
+    font-size: 1.8vw;
+}
+
+/* format for table header */
+.calendar th {
+    background-color: #f58220; 
+    color: white;
+    padding: 1vw;
+    font-size: 1.8vw;
+}
+
+/* format for table data */
+.calendar td {
+    border: 0.1vw solid #cccccc;
+    padding: 1.2vw; /* space inside the cell */
+    text-align: center;
+}
+
+.calendar td:hover {
+    background-color: #d0d0d0;
+}
+
+/* Time Slots Section */
+.titles {
+    margin: 3vw 0 1vw; /* spaces vertically */
+    font-size: 2vw;
+    text-align: left; 
+    margin-left: 18%; /* space between edge */
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 8vw);
+    justify-content: center; /* center the grid */
+    justify-items: start; /* left align */
+    gap: 1vw; /* space between */
+    width: 60vw;
+    margin: 0 auto 3vw; /* center horizontally and add space to the bottom */
+}
+
+/* feel free change the color if you don't them */
+.time-slots button {
+    width: 8vw;
+    padding: 0.5vw; /* space inside the cell */
+    border: 0.1vw solid black;
+    background-color: white; 
+    font-size: 1.4vw;
+    border-radius: 1vw;
+    text-align: center;
+}
+
+.time-slots button:hover {
+    background-color: #f0f0f0;
+}
+
+.order-details {
+    display: flex;
+    align-items: center;
+    background-color: #fff3cc;  
+    border-radius: 2vw; /* round corner */
+    padding: 2vw; /* spcace between content and yellow background */
+    width: fit-content; /* dyanamic width */
+    margin: 0 auto; /* center horizontally */
+    gap: 2vw; /* space between text and button */
+}
+
+.detail-info {
+    text-align: center;
+    font-size: 1.6vw;
+    line-height: 1.5; /* line spacing */
+}
+
+
+.checkout-button {
+    background-color: #00b140;
+    color: white;
+    border: none;
+    padding: 1.5vw;
+    font-size: 1.6vw;
+    border-radius: 50%; /* oval shape */
+    width: 12vw;
+    height: 8vw;
+    display: flex; /* center everything */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.checkout-button:hover {
+    background-color: #007d30;
+}

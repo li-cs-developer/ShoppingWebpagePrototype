@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Store Name</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="checkout.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Top Bar -->
+    <header>
+        <div class="topbar">
+            <div class="topbar-left">
+                <img src="images/logo.png" alt="Store Logo" class="logo" />
+                <span class="store-name">Store Name</span>
+            </div>
+
+            <div class="topbar-center">
+                <a href="index.html" class="topbar-link">Home</a>
+                <a href="shop.html" class="topbar-link">Shop</a>
+                <a href="refill.html" class="topbar-link">Refill</a>
+            </div>
+
+            <div class="topbar-right">
+                <input type="text" class="search-box" placeholder="Search..." />
+                <a href="checkout.html" class="cart-icon">
+                    <img src="images/cart.png" alt="Cart" class="cart-img" />
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="checkout-page-layout">
+        <div class="checkout">Checkout</div>
+
+        <!-- Cart Section: I just made those up briefly -->
+        <div class="cart-section">
+            <!-- Pig Feed -->
+            <div class="cart-item">
+                <div class="cart-item-name" data-toggle="pig">
+                    <span class="item-name">Pig Feed</span>
+                    <span class="toggle-arrow">&#9650;</span>
+                </div>
+                <div class="cart-details">
+                    <div class="item-image-container">
+                        <img src="images/photo1.png" alt="Pig Feed" class="cart-item-image">
+                    </div>
+                    <div class="item-details">
+                        <div class="price-line"><strong class="price">Price:</strong> <span class="price-value">$10.00</span></div>
+                        <div class="quantity-control">
+                            <button class="decrease-quantity">-</button>
+                            <span class="quantity-value">1</span>
+                            <button class="increase-quantity">+</button>
+                        </div>
+                        <div class="ingredient-buttons">
+                            <button class="ingredient">Beans</button>
+                            <button class="ingredient">Wheat</button>
+                            <button class="ingredient">Corn</button>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/trashcan.png" alt="Remove" class="trash-icon">
+            </div>
+
+            <!-- Cow Feed -->
+            <div class="cart-item">
+                <div class="cart-item-name" data-toggle="cow">
+                    <span class="item-name">Cow Feed</span>
+                    <span class="toggle-arrow">&#9660;</span>
+                </div>
+                <div class="cart-details hidden">
+                    <div class="item-image-container">
+                        <img src="images/photo1.png" alt="Cow Feed" class="cart-item-image">
+                    </div>
+                    <div class="item-details">
+                        <div class="price-line"><strong class="price">Price:</strong> <span class="price-value">$12.00</span></div>
+                        <div class="quantity-control">
+                            <button class="decrease-quantity">-</button>
+                            <span class="quantity-value">1</span>
+                            <button class="increase-quantity">+</button>
+                        </div>
+                        <div class="ingredient-buttons">
+                            <button class="ingredient">Beans</button>
+                            <button class="ingredient">Wheat</button>
+                            <button class="ingredient">Corn</button>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/trashcan.png" alt="Remove" class="trash-icon">
+            </div>
+
+            <!-- Chicken Feed -->
+            <div class="cart-item">
+                <div class="cart-item-name" data-toggle="chicken">
+                    <span class="item-name">Chicken Feed</span>
+                    <span class="toggle-arrow">&#9660;</span>
+                </div>
+                <div class="cart-details hidden">
+                    <div class="item-image-container">
+                        <img src="images/photo1.png" alt="Chicken Feed" class="cart-item-image">
+                    </div>
+                    <div class="item-details">
+                        <div class="price-line"><strong class="price">Price:</strong> <span class="price-value">$11.00</span></div>
+                        <div class="quantity-control">
+                            <button class="decrease-quantity">-</button>
+                            <span class="quantity-value">1</span>
+                            <button class="increase-quantity">+</button>
+                        </div>
+                        <div class="ingredient-buttons">
+                            <button class="ingredient">Beans</button>
+                            <button class="ingredient">Wheat</button>
+                            <button class="ingredient">Corn</button>
+                        </div>
+                    </div>
+                </div>
+                <img src="images/trashcan.png" alt="Remove" class="trash-icon">
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Summary Section: I only briefly faked these-->
+        <div class="summary-section">
+            <div class="summary-line">
+                <span class="summary">Subtotal</span> 
+                <span class="summary-value">$33.00</span>
+            </div>
+            <div class="summary-line">
+                <span class="summary">GST (5%)</span> 
+                <span class="summary-value">$1.65</span>
+            </div>
+            <div class="summary-line">
+                <span class="summary">PST (7%)</span> 
+                <span class="summary-value">$2.31</span>
+            </div>
+            <div class="summary-line">
+                <span class="summary">Shipping</span> 
+                <span class="summary-value">$5.00</span></div>
+            <div class="summary-line total">
+                <span class="summary total-label">Total</span>
+                <span class="summary-value total-value">$41.96</span>
+            </div>
+
+            <!-- Shipping Method: I only briefly faked these -->
+            <div class="shipping-method-section">
+                <strong class="shipping-method">Shipping Method</strong>
+                <label class="shipping-option">
+                    <input type="radio" name="shipping" value="method1">
+                    <span class="option">Method 1</span>
+                </label>
+                <label class="shipping-option">
+                    <input type="radio" name="shipping" value="method2">
+                    <span class="option">Method 2</span>
+                </label>
+            </div>
+
+            <a href="pay_succeed.html" class="pay-button">Pay Now</a>
+        </div>
+    </main>
+</body>
+</html>

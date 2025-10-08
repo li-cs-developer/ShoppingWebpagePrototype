@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Store Name</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shop.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <header>
+        <div class="topbar">
+            <div class="topbar-left">
+                <img src="images/logo.png" alt="Store Logo" class="logo" />
+                <span class="store-name">Store Name</span>
+            </div>
+
+            <div class="topbar-center">
+                <a href="index.html" class="topbar-link">Home</a>
+                <a href="shop.html" class="topbar-link">Shop</a>
+                <a href="refill.html" class="topbar-link">Refill</a>
+            </div>
+
+            <div class="topbar-right">
+                <input type="text" class="search-box" placeholder="Search..." />
+                <a href="checkout.html" class="cart-icon">
+                    <img src="images/cart.png" alt="Cart" class="cart-img" />
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shopping page -->
+    <main class="shop-page">
+        <div class="shop-page-layout">
+            <!-- Filter Sidebar -->
+            <aside class="filters">
+                <h2 class="filter">Filter</h2>
+                <hr class="filter-divider">
+                
+                <!-- Ingredients Category -->
+                <div class="filter-category">
+                    <div class="category" onclick="toggleFilter('ingredient')">
+                        <span>Ingredients</span>
+                        <span class="toggle-arrow">&#9660;</span>
+                    </div>
+                    <div class="filter-options hidden" id="filter-ingredient">
+                        <label><input type="checkbox"> Corn</label>
+                        <label><input type="checkbox"> Beans</label>
+                        <label><input type="checkbox"> Wheat</label>
+                    </div>
+                </div>
+
+                <hr class="filter-divider">
+
+                <!-- Aminal Category -->
+                <div class="filter-category">
+                    <div class="category" onclick="toggleFilter('animal')">
+                        <span>Animals</span>
+                        <span class="toggle-arrow">&#9660;</span>
+                    </div>
+                    <div class="filter-options hidden" id="filter-animal">
+                        <label><input type="checkbox"> Pig</label>
+                        <label><input type="checkbox"> Chicken</label>
+                        <label><input type="checkbox"> Cow</label>
+                    </div>
+                </div>
+
+
+            </aside>
+
+            <!-- Products Grid -->
+            <section class="product-grid">
+                <a href="item.html" class="product-card">
+                    <img src="images/photo1.png" alt="Item 1">
+                    <h3 class="product-name">Item 1</h3>
+                    <p class="product-price">$100.00</p>
+                </a>
+                <a href="item.html" class="product-card">
+                    <img src="images/photo2.png" alt="Item 2">
+                    <h3 class="product-name">Item 2</h3>
+                    <p class="product-price">$100.00</p>
+                </a>
+                <a href="item.html" class="product-card">
+                    <img src="images/photo1.png" alt="Item 3">
+                    <h3 class="product-name">Item 3</h3>
+                    <p class="product-price">$100.00</p>
+                </a>
+                <a href="item.html" class="product-card">
+                    <img src="images/photo2.png" alt="Item 4">
+                    <h3 class="product-name">Item 4</h3>
+                    <p class="product-price">$100.00</p>
+                </a>
+                <a href="item.html" class="product-card">
+                    <img src="images/photo1.png" alt="Item 5">
+                    <h3 class="product-name">Item 5</h3>
+                    <p class="product-price">$100.00</p>
+                </a>
+                <a href="item.html" class="product-card">
+                    <img src="images/photo2.png" alt="Item 6">
+                    <h3 class="product-name">Item 6</h3>
+                    <p class="product-price">$100.00</p>
+                </a>
+
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
+

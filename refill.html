@@ -1,0 +1,143 @@
+<!DOCTYPE html> <!-- Refill Page -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refill - Store Name</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="refill.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <header>
+        <div class="topbar">
+            <div class="topbar-left">
+                <img src="images/logo.png" alt="Store Logo" class="logo" />
+                <span class="store-name">Store Name</span>
+            </div>
+
+            <div class="topbar-center">
+                <a href="index.html" class="topbar-link">Home</a>
+                <a href="shop.html" class="topbar-link">Shop</a>
+                <a href="refill.html" class="topbar-link">Refill</a>
+            </div>
+
+            <div class="topbar-right">
+                <input type="text" class="search-box" placeholder="Search..." />
+                <a href="checkout.html" class="cart-icon">
+                    <img src="images/cart.png" alt="Cart" class="cart-img" />
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- I only made a calendar for june 2025 -->
+    <main class="refill-page">
+        <h1 class="month-title">June, 2025</h1>
+
+        <!-- Calendar -->
+        <table class="calendar">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="calendar-day">1</td>
+                    <td class="calendar-day">2</td>
+                    <td class="calendar-day">3</td>
+                    <td class="calendar-day">4</td>
+                    <td class="calendar-day">5</td>
+                    <td class="calendar-day">6</td>
+                    <td class="calendar-day">7</td>
+                </tr>
+                <tr>
+                    <td class="calendar-day">8</td>
+                    <td class="calendar-day">9</td>
+                    <td class="calendar-day">10</td>
+                    <td class="calendar-day">11</td>
+                    <td class="calendar-day">12</td>
+                    <td class="calendar-day">13</td>
+                    <td class="calendar-day">14</td>
+                </tr>
+                <tr>
+                    <td class="calendar-day">15</td>
+                    <td class="calendar-day">16</td>
+                    <td class="calendar-day">17</td>
+                    <td class="calendar-day">18</td>
+                    <td class="calendar-day">19</td>
+                    <td class="calendar-day">20</td>
+                    <td class="calendar-day">21</td>
+                </tr>
+                <tr>
+                    <td class="calendar-day">22</td>
+                    <td class="calendar-day">23</td>
+                    <td class="calendar-day">24</td>
+                    <td class="calendar-day">25</td>
+                    <td class="calendar-day">26</td>
+                    <td class="calendar-day">27</td>
+                    <td class="calendar-day">28</td>
+                </tr>
+                <tr>
+                    <td class="calendar-day">29</td>
+                    <td class="calendar-day">30</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Time Slots -->
+        <h2 class="titles">Time Slots:</h2>
+        <div class="time-slots">
+            <button class="time-slot">9:00 AM</button>
+            <button class="time-slot">9:30 AM</button>
+            <button class="time-slot">10:00 AM</button>
+            <button class="time-slot">10:30 AM</button>
+            <button class="time-slot">11:00 AM</button>
+            <button class="time-slot">11:30 AM</button>
+            <button class="time-slot">12:00 PM</button>
+            <button class="time-slot">12:30 PM</button>
+            <button class="time-slot">1:00 PM</button>
+            <button class="time-slot">1:30 PM</button>
+            <button class="time-slot">2:00 PM</button>
+            <button class="time-slot">2:30 PM</button>
+            <button class="time-slot">3:00 PM</button>
+            <button class="time-slot">3:30 PM</button>
+            <button class="time-slot">4:00 PM</button>
+            <button class="time-slot">4:30 PM</button>
+        </div>
+
+        <!-- Order Details -->
+        <h2 class="titles">Order Details:</h2>
+        <section class="order-details">
+            <div class="detail-info">
+                <p><strong>Date:</strong> <span id="selected-date">June 12th, 2025</span></p>
+                <p><strong>Time:</strong> <span id="selected-time">2:30 PM</span></p>
+                <p><strong>Address:</strong>
+                    <span id="selected-address">
+                        65 Chancellor Cir<br>
+                        Winnipeg, MB<br>
+                        R3T2N2
+                    </span>
+                </p>
+            </div>
+
+            <button class="checkout-button">Proceed to Checkout</button>
+        </section>
+    </main>
+</body>
+</html>
+

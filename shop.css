@@ -1,0 +1,86 @@
+.shop-page-layout {
+    display: flex;
+    padding: 2vw; /* space between edges */
+    gap: 2vw; /* space between the filter and the items */
+}
+
+.filters {
+    flex: 1 1 auto; /* felxible growth and shrink */
+    max-width: 20vw; 
+    min-width: 15vw;
+}
+
+.filter {
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+
+.filter-divider {
+    border: none;
+    border-top: 0.15vw solid black;
+    margin: 1vw 0; /* add horizontal space */
+}
+
+.category {
+    display: flex;
+    justify-content: space-between; 
+    font-weight: bold;
+    padding: 0.5vw 0; /* vertical spaces */
+    font-size: 1.5vw;
+}
+
+.filter-options label {
+    display: block;
+    padding: 0.25vw 0; /* vertical spaces */
+    font-size: 1.2vw;
+}
+
+.hidden {
+    display: none;
+}
+
+.product-grid {
+    flex: 3; /* get the majority spacefor product grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 product per line */
+    gap: 2vw;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column; /* list the name and price below the image */
+    text-decoration: none; /* remove link style */
+    color: black; /* black text */
+    border: 0.1vw solid #cccccc;
+    border-radius: 0.5vw;
+    padding: 1.5vw; /* spaces inside the card */
+    background-color: #f9f9f9;
+}
+
+.product-card:hover {
+    box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.2); /* shadow effect when hover */
+}
+
+.product-card img {
+    width: 100%; /* fill the card */
+    height: auto;
+    border-radius: 0.3vw; /* slightly round corner */
+    margin-bottom: 0.5vw; /* space below */
+}
+
+.product-name {
+    font-size: 1.8vw;
+    margin: 0.25vw 0 0;
+}
+
+.product-price {
+    color: #007d30; /* green text */
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin: 0.5vw 0 0; /* space above */
+}
+
+
+
+
+
